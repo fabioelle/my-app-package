@@ -1,5 +1,11 @@
 import React, { useState } from 'react'
 
+import {
+  Box,
+  Card,
+  Button
+} from "@chakra-ui/react";
+
 type Props = {
     value?: number
 }
@@ -15,11 +21,25 @@ const MyCounter = ({ value = 0 }: Props) => {
     };
 
     return (
-        <div>
-            <h1>Counter: {counter}</h1>
-            <button onClick={onMinus}>-</button>
-            <button onClick={onPlus}>+</button>
-        </div>
+        <Box
+          w={{
+            xs: "100%",
+            sm: "32%",
+            md: "32%",
+            lg: "32%",
+            xl: "32%",
+            "2xl": "32%",
+          }}
+          mr={{ xs: "0 !important", sm: 6, md: 6, lg: 6, xl: 6, "2xl": 6 }}
+          mt={{ xs: 6 }}
+          mb={{ xs: 6 }}
+        >
+            <Card>
+                <h1>Counter: {counter}</h1>
+                <Button onClick={onMinus}>-</Button>
+                <Button onClick={onPlus}>+</Button>
+            </Card>
+        </Box>
     )
 }
 

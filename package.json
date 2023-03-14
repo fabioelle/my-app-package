@@ -1,7 +1,6 @@
 {
-  "name": "my-app-package",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@fabioelle/my-app-package",
+  "version": "1.2.0",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
@@ -18,6 +17,7 @@
   "author": "fabioelle",
   "license": "MIT",
   "devDependencies": {
+    "@chakra-ui/react": "^2.4.6",
     "@types/react": "^18.0.12",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
@@ -25,7 +25,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fabioelle/my-app-package.git"
+    "url": "git+https://github.com/fabioelle/my-app-package.git"
   },
   "peerDependencies": {
     "react": ">=16"
@@ -34,5 +34,18 @@
     "dist",
     "LICENSE",
     "README.md"
-  ]
+  ],
+  "bugs": {
+    "url": "https://github.com/fabioelle/my-app-package/issues"
+  },
+  "homepage": "https://github.com/fabioelle/my-app-package#readme",
+  "dependencies": {
+    "csstype": "^3.1.1",
+    "js-tokens": "^4.0.0",
+    "loose-envify": "^1.4.0",
+    "node-gyp": "^9.3.1",
+    "sass": "^1.59.2",
+    "scheduler": "^0.23.0"
+  },
+  "description": ""
 }
